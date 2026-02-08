@@ -1,0 +1,66 @@
+.admin-bg {
+  background: linear-gradient(135deg, #f5a623 0%, #d76a4f 100%);
+}
+
+.admin-card {
+  max-width: 1000px;
+}
+
+.admin-left {
+  background: linear-gradient(135deg, #f5a623 0%, #d76a4f 100%);
+}
+
+.admin-left h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.admin-left p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.admin-features {
+  margin-top: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-item {
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+
+.admin-right {
+  background: white;
+}
+
+.admin-logo {
+  background: linear-gradient(135deg, #f5a623 0%, #d76a4f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.error-message {
+  background: #fed7d7;
+  color: #742a2a;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  border-left: 4px solid #f56565;
+}
+
+@media (max-width: 768px) {
+  .admin-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .feature-item {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,166 @@
+.create-course-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.create-course-container h2 {
+  font-size: 1.8rem;
+  color: #1a365d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.msg-success {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #c6f6d5;
+  color: #22543d;
+  border-radius: 8px;
+  font-weight: 500;
+  border-left: 4px solid #38a169;
+}
+
+.msg-error {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fed7d7;
+  color: #742a2a;
+  border-radius: 8px;
+  font-weight: 500;
+  border-left: 4px solid #f56565;
+}
+
+.course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.modules-section {
+  padding: 20px;
+  background: #f7fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.modules-section h3 {
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.module-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #cbd5e0;
+}
+
+.module-card input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+}
+
+.btn-remove {
+  padding: 8px 12px;
+  background: #fc8181;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-remove:hover {
+  background: #f56565;
+}
+
+.btn-add-module {
+  padding: 10px 16px;
+  background: #bee3f8;
+  color: #2c5282;
+  border: 1px dashed #4299e1;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-add-module:hover {
+  background: #90cdf4;
+}
+
+.btn-submit {
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .create-course-container {
+    padding: 0 10px;
+  }
+
+  .module-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .module-card input {
+    margin-bottom: 10px;
+  }
+
+  .btn-remove {
+    width: 100%;
+  }
+}

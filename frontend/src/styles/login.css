@@ -1,0 +1,66 @@
+.auth-right input {
+  width: 90%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1.5px solid #e0e7e1;
+  font-size: 15px;
+  font-family: inherit;
+  background: #f8fbf9;
+  transition: all 0.3s ease;
+}
+
+.auth-right input:focus {
+  outline: none;
+  border-color: #16a34a;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.08);
+}
+
+.auth-right input::placeholder {
+  color: #9ca8a0;
+}
+
+.auth-right button {
+  width: 100%;
+  padding: 14px 16px;
+  background: linear-gradient(90deg, #16a34a, #10b981);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+  box-shadow: 0 8px 16px rgba(22, 163, 74, 0.12);
+}
+
+.auth-right button:hover {
+  background: linear-gradient(90deg, #0d5a32, #0a9d6f);
+  box-shadow: 0 12px 24px rgba(22, 163, 74, 0.18);
+  transform: translateY(-2px);
+}
+
+.auth-right button:active {
+  transform: translateY(0);
+}
+
+.auth-switch {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6b7b6a;
+  text-align: center;
+}
+
+.auth-switch a {
+  color: #0b6b3a;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.auth-switch a:hover {
+  color: #16a34a;
+}
